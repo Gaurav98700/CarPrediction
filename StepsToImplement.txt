@@ -1,0 +1,37 @@
+https://github.com/gaurav8286/Car-Price-Prediction
+https://www.youtube.com/watch?v=p_tpQSY1aTs&t=3271s
+Open Anaconda and 
+1) Create a new environment
+	conda create -n myenv python=3.6 or
+	conda create -n carprediction python=3.7
+Activate env
+	activate carprediction
+
+cd 'car prediction location in file explorer'
+2) Open jupyter notebook and train ur model 
+3) Generate model.pkl file
+4) create reuirement.txt file
+activate carprediction
+cd path of folder
+pip freeze > requirement.txt
+pip install flask jsonify requests
+
+5)create app.py file
+python app.py
+create templates folder and put index.html file
+
+6) Create Docker file
+docker build -t car_sellingprice_prediction_model:1.0 .
+
+ docker run -d -p 5000:3000 car_sellingprice_prediction_model:1.0
+
+
+7) push all files to github
+create a new repository on the command line
+echo "# Car_SellingPrice_Prediction" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gaurav8286/Car_SellingPrice_Prediction.git
+git push -u origin main
